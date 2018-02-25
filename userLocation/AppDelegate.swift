@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  userLocation
-//
-//  Created by YOUGG on 30/01/2018.
-//  Copyright © 2018 YOUGG. All rights reserved.
-//
+
 
 import UIKit
 
