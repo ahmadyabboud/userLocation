@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA0B70012020CADA00E28BC6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7E7E552020913F006CEB59 /* CoreLocation.framework */; };
 		EA7E7E43202090E8006CEB59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7E7E42202090E8006CEB59 /* AppDelegate.swift */; };
 		EA7E7E45202090E8006CEB59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7E7E44202090E8006CEB59 /* ViewController.swift */; };
 		EA7E7E48202090E8006CEB59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7E7E46202090E8006CEB59 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		EA7E7E49202090E8006CEB59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA7E7E4C202090E8006CEB59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA7E7E4E202090E8006CEB59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA7E7E552020913F006CEB59 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0B70012020CADA00E28BC6 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				EA7E7E41202090E8006CEB59 /* userLocation */,
 				EA7E7E40202090E8006CEB59 /* Products */,
+				EA7E7E542020913F006CEB59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				EA7E7E4E202090E8006CEB59 /* Info.plist */,
 			);
 			path = userLocation;
+			sourceTree = "<group>";
+		};
+		EA7E7E542020913F006CEB59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA7E7E552020913F006CEB59 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,11 +289,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NF69TSV658;
 				INFOPLIST_FILE = userLocation/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yougg.userLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -292,11 +305,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NF69TSV658;
 				INFOPLIST_FILE = userLocation/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yougg.userLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
